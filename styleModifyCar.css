@@ -35,3 +35,45 @@
     font-size: 1.2em;
     color: #ccc;
 }
+
+.modifyCar__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #939396;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.modifyCar__input:focus {
+    border-color: #007bff;
+    border-color: #F54703;
+    outline: none;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.modifyCar__button {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: #F54703;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+.modifyCar__button:hover {
+    background-color: #eb5e28;
+}

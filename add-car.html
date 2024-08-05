@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleRegister.css">
+    <script src="scriptRegister.js"></script>
+    <script defer src="hamburgerMenu.js"></script>
+    <title>Agregar Vehículo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo ">
+            <a href="index.html">
+                <img class="header__logo--img" src="imagenes/Logo_1.png" alt="descripcion">
+            </a>
+        </div>
+
+        <div class="header__menu ">
+            <button class="abrir__menu" id="abrir">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="cerrar__menu" id="cerrar">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav-list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="index.html">Inicio</a></li>
+                    <!--<li class="menu__list--item"><a class="menu__list--link" href="aboutus.html">Nosotros</a></li> -->
+                    <li class="menu__list--item"><a class="menu__list--link" href="detailcar.html">Detalle</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="contact.html">Contacto</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>       
+    </header>
+
+    <main class="main">
+
+        <div class="register__header main__titulo--texto">
+            <h1 class="register__title">Agregue un Nuevo Vehículo</h1>
+            <p>Diligencia los siguientes datos para agregar un nuevo vehículo al portafolio de Autosell</p>
+        </div>
+        
+        <!--Bloque: Registro-->
+        <div class="register">
+
+        <!-- Elemento: register__form -->
+            <form class="register">
+                <!--Elemento: register__fieldset Títulos -->
+                <fieldset class="register__fieldset">
+                    <!--<legend class="register__legend">Información de contacto</legend>
+                    <h2 class="register__subtitle"> Lorem ipsum dolor, sit amet consectetur</h2>-->
+                    <img class="register__subtitle" src="imagenes/Logo_1.png">
+
+                    <!--Elemento: register__field Marca -->
+                    <div class="register__field">
+                        <label class="register__label" for="Marca">Marca *</label>
+                        <input class="register__input" type="text" name="MarcaInput" id="marca" minlength="2" maxlength="15" required>
+                    </div>
+
+                    <!--Elemento: register__field Modelo-->
+                    <div class="register__field">
+                        <label class="register__label" for="Modelo">Modelo *</label>
+                        <input class="register__input" type="text" name="ModeloInput" id="modelo" minlength="2" maxlength="15" required>
+                    </div>
+
+                    <!--Elemento: register__field Versión del vehículo-->
+                    <div class="register__field">
+                        <label class="register__label" for="Versión">Versión de Vehículo*</label>
+                        <input class="register__input" type="text" name="VersionInput" id="version" required>
+                    </div>
+                    
+                    <!--Elemento: register__field Id del vehículo-->
+                    <div class="register__field">
+                        <label class="register__label" for="IdCar">Id del Vehículo</label>
+                        <input class="register__input" type="number" name="IdInput" id="id" min="3" max="4" placeholder="Número Único del Vehículo">
+                    </div>
+
+                    <!--Elemento: register__field Motor-->
+                    <div class="register__field">
+                        <label class="register__label" for="motor">Motor *</label>
+                        <input class="register__input" type="text" name="MotorInput" id="motor" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <!--Elemento: register__field Transmisión-->
+                    <div class="register__field">
+                        <label class="register__label" for="transmisión">Transmisión *</label>
+                        <input class="register__input" type="text" name="Transmisión" id="transmisión" minlength="0" maxlength="999999999999" required>
+                    </div>
+
+                    <!--Elemento: register__field Color-->
+                        <div class="register__field">
+                        <label class="register__label" for="color">Color *</label>
+                        <input class="register__input" type="text" name="Color" id="color" minlength="0" maxlength="999999999999" required>
+                    </div>
+                    
+                    <!--Elemento: Register__field Password-->
+                    <div class="register__field">
+                        <label class="register__label" for="password">Introduzca su Contraseña de Usuario Autorizado*</label>
+                        <div class="register__label--show">
+                            <input class="register__input" type="password" name="password" id="password" minlength="8" maxlength="999999999999999" required>
+                            <i class="bi1 bi-eye-fill"></i>
+                        </div>
+                    </div>
+
+                    <!--Elemento: register__field Submit button-->
+                    <input type="submit" class="register__button">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__info">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+            <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos de Uso</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

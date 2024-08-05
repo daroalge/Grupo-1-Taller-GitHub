@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleModifyCar.css">
+    <title>Formulario Modificar Vehiculo</title>
+</head>
+<body>
+    <!--Main-->
+    <main class="main">
+
+        <!--Elemento: modifyCar__form -->
+        <div class="modifyCar">
+            <fieldset class="modifyCar__fieldset">
+                <img class="modifyCar__header" src="imagenes/Logo_1.png">
+
+                <div class="modifyCar__field">
+                    <label class="modifyCar__label" for="idCar">Ingrese el numero VIN *</label>
+                    <input class="modifyCar__input" type="text" name="idCarINput" id="idCar" minlength="17" maxlength="17" required>
+                </div>
+
+                <div class="modifyCar__field">
+                    <label class="modifyCar__label" for="oldKilometrage">Ingrese el kilometraje anterior *</label>
+                    <input class="modifyCar__input" type="number" name="oldKilometrage" id="oldKilometrage" minlength="1" maxlength="1000000" required>
+                </div>
+
+                <div class="modifyCar__field">
+                    <label class="modifyCar__label" for="newKilometrage">Ingrese el kilometraje nuevo *</label>
+                    <input class="modifyCar__input" type="number" name="newKilometrage" id="newKilometrage" minlength="1" maxlength="1000000" required>
+                </div>
+
+                <div class="modifyCar__field">
+                    <label class="modifyCar__label" for="oldColor">Ingrese el color anterior *</label>
+                    <input class="modifyCar__input" type="text" name="oldColor" id="oldColor" minlength="1" maxlength="20" required>
+                </div>
+
+                <div class="modifyCar__field">
+                    <label class="modifyCar__label" for="newColor">Ingrese el color nuevo *</label>
+                    <input class="modifyCar__input" type="text" name="newColor" id="newColor" minlength="1" maxlength="20" required>
+                </div>
+
+                <div class="input">
+                    <input typet="submit" class="modifyCar__button" placeholder="Ingresar">
+                    <input typet="submit" class="modifyCar__button" placeholder="Modficar">
+                    <input typet="submit" class="modifyCar__button" placeholder="Eliminar">
+                </div>
+
+            </fieldset>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Selección de Marca de Carro</title>
+    <link rel="stylesheet" type="text/css" href="styleMarcaForm.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo ">
+            <a href="index.html">
+                <img class="header__logo--img" src="imagenes/Logo_1.png" alt="descripcion">
+            </a>
+        </div>
+
+        <div class="header__menu ">
+            <button class="abrir__menu" id="abrir">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="cerrar__menu" id="cerrar">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav-list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="index.html">Inicio</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="detailcar.html">Detalle</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="contact.html">Contacto</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="register.html">Registro</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="nuevoCliente.html">Clientes</a></li>
+                </ul>
+            </nav>
+        </div>       
+    </header>    
+
+<div class="form-container">
+    <h2>Elige la Marca del Carro</h2>
+    <form>
+        <label for="car-brand">Marca del Carro:</label>
+        <select id="car-brand" name="car-brand" required>
+            <option value="" disabled selected>Seleccione una marca</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="porsche">Porsche</option>
+            <option value="tesla">Tesla</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="lamborghini">Lamborghini</option>
+        </select>
+        <button type="submit" >Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
